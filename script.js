@@ -527,7 +527,7 @@ const FALLBACK_TRANSLATIONS = {
         'hero.scroll': 'Rolar',
         'about.tag': 'Quem somos',
         'about.title': 'Nascidos em Bruxelas,<br>Enraizados no Recife',
-        'about.lead': 'Uma fanfarra brasileira trazendo a for\u00e7a do maracatu para a Europa desde 2016.',
+        'about.lead': 'Trazendo a for\u00e7a do maracatu para a Europa desde 2016.',
         'about.text1': 'Baque de Chuva \u00e9 um coletivo de percuss\u00e3o baseado em Bruxelas, formado por residentes de diversas tradi\u00e7\u00f5es musicais e origens. Unidos pela paix\u00e3o compartilhada pelos ritmos ancestrais de Pernambuco, nos reapropriamos do <strong>Maracatu de Baque Virado</strong> tradicional \u2014 uma m\u00fasica festiva, poderosa e profundamente dan\u00e7ante que acompanha os carnavais populares do nordeste do Brasil.',
         'about.text2': 'Nosso nome, <em>\u201CBaque de Chuva\u201D</em>, evoca a for\u00e7a estrondosa dos nossos tambores ecoando como chuva tropical \u2014 impar\u00e1vel, purificadora e cheia de vida.',
         'about.founded': 'Funda\u00e7\u00e3o',
