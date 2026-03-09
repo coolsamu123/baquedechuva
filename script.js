@@ -2,6 +2,8 @@
    BAQUE DE CHUVA - Ultra Fluid JavaScript
    ======================================== */
 
+let siteContent = null;
+
 document.addEventListener('DOMContentLoaded', () => {
     initLoader();
     initNavbar();
@@ -11,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initParallax();
     initRainEffect();
     initInstrumentCards();
-    initLanguageSwitcher();
+    loadContent();
 });
 
 /* ========================================
@@ -311,9 +313,85 @@ if (window.location.hash) {
 }
 
 /* ========================================
+   Load Content from content.json
+   ======================================== */
+function loadContent() {
+    fetch('content.json')
+        .then(res => res.json())
+        .then(data => {
+            siteContent = data;
+            applyImages(data.images);
+            applySocial(data.social);
+            applyNacoes(data.nacoes);
+            applyStats(data.stats);
+            applyEstrelaBadge(data.estrela_badge);
+            applyGallery(data.images.gallery);
+            initLanguageSwitcher(data.translations);
+        })
+        .catch(() => {
+            initLanguageSwitcher(null);
+        });
+}
+
+function applyImages(images) {
+    if (!images) return;
+    const map = {
+        hero_background: '.hero-bg-img',
+        about_photo: '.about-image img',
+        maracatu_background: '.parallax-bg img',
+        estrela_photo: '.estrela-image img',
+        parades_photo: '.parades-image img',
+        contact_photo: '.contact-image img'
+    };
+    for (const [key, selector] of Object.entries(map)) {
+        if (images[key]) {
+            const el = document.querySelector(selector);
+            if (el) el.src = images[key];
+        }
+    }
+}
+
+function applySocial(social) {
+    if (!social) return;
+    const igLinks = document.querySelectorAll('a[href*="instagram.com"]');
+    const fbLinks = document.querySelectorAll('a[href*="facebook.com"]');
+    if (social.instagram) igLinks.forEach(a => a.href = social.instagram);
+    if (social.facebook) fbLinks.forEach(a => a.href = social.facebook);
+}
+
+function applyNacoes(nacoes) {
+    if (!nacoes) return;
+    const container = document.querySelector('.nacoes-tags');
+    if (!container) return;
+    container.innerHTML = nacoes.map(n => '<span class="nacao-tag">' + n + '</span>').join('');
+}
+
+function applyStats(stats) {
+    if (!stats) return;
+    const numbers = document.querySelectorAll('.stat-number');
+    if (numbers[0] && stats.number1) numbers[0].textContent = stats.number1;
+    if (numbers[1] && stats.number2) numbers[1].textContent = stats.number2;
+    if (numbers[2] && stats.number3) numbers[2].textContent = stats.number3;
+}
+
+function applyEstrelaBadge(text) {
+    if (!text) return;
+    const badge = document.querySelector('.estrela-badge span');
+    if (badge) badge.textContent = text;
+}
+
+function applyGallery(galleryImages) {
+    if (!galleryImages || galleryImages.length === 0) return;
+    const track = document.querySelector('.gallery-track');
+    if (!track) return;
+    const imgs = galleryImages.map(src => '<img src="' + src + '" alt="" loading="lazy">').join('');
+    track.innerHTML = imgs + imgs;
+}
+
+/* ========================================
    Language Switcher & Translations
    ======================================== */
-const translations = {
+const FALLBACK_TRANSLATIONS = {
     en: {
         'nav.about': 'About',
         'nav.maracatu': 'Maracatu',
@@ -499,11 +577,12 @@ const translations = {
     }
 };
 
-function initLanguageSwitcher() {
+function initLanguageSwitcher(externalTranslations) {
+    const translations = externalTranslations || FALLBACK_TRANSLATIONS;
     const buttons = document.querySelectorAll('.lang-btn');
     const saved = localStorage.getItem('bdc-lang') || 'en';
 
-    setLanguage(saved);
+    setLanguage(saved, translations);
 
     buttons.forEach(btn => {
         if (btn.dataset.lang === saved) {
@@ -514,13 +593,13 @@ function initLanguageSwitcher() {
             const lang = btn.dataset.lang;
             buttons.forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
-            setLanguage(lang);
+            setLanguage(lang, translations);
             localStorage.setItem('bdc-lang', lang);
         });
     });
 }
 
-function setLanguage(lang) {
+function setLanguage(lang, translations) {
     const t = translations[lang];
     if (!t) return;
 
