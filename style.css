@@ -354,6 +354,58 @@ ul {
     background: var(--color-dark);
 }
 
+/* Language Switcher */
+.lang-switcher {
+    display: flex;
+    gap: 2px;
+    margin-left: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius-full);
+    padding: 2px;
+}
+
+.lang-btn {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.7rem;
+    font-weight: 700;
+    font-family: var(--font-main);
+    color: rgba(255, 255, 255, 0.7);
+    background: none;
+    border: none;
+    border-radius: var(--radius-full);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    letter-spacing: 0.5px;
+}
+
+.lang-btn:hover {
+    color: var(--color-white);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.lang-btn.active {
+    color: var(--color-primary-dark);
+    background: var(--color-accent);
+}
+
+.navbar.scrolled .lang-switcher {
+    background: rgba(26, 58, 107, 0.08);
+}
+
+.navbar.scrolled .lang-btn {
+    color: var(--color-gray);
+}
+
+.navbar.scrolled .lang-btn:hover {
+    color: var(--color-primary);
+    background: rgba(26, 58, 107, 0.1);
+}
+
+.navbar.scrolled .lang-btn.active {
+    color: var(--color-primary-dark);
+    background: var(--color-accent);
+}
+
 /* ========================================
    Hero Section
    ======================================== */
@@ -1378,6 +1430,18 @@ ul {
 
     .nav-toggle.active span:nth-child(3) {
         transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    .lang-switcher {
+        position: absolute;
+        top: 1.1rem;
+        right: 3.5rem;
+        margin-left: 0;
+        background: rgba(255, 255, 255, 0.15);
+    }
+
+    .navbar.scrolled .lang-switcher {
+        background: rgba(26, 58, 107, 0.08);
     }
 
     .hero-title {

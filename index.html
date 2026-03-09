@@ -43,12 +43,17 @@
                 <span></span>
             </button>
             <ul class="nav-menu" id="navMenu">
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#maracatu" class="nav-link">Maracatu</a></li>
-                <li><a href="#parades" class="nav-link">Parades</a></li>
-                <li><a href="#gallery" class="nav-link">Gallery</a></li>
-                <li><a href="#contact" class="nav-link nav-link-cta">Contact</a></li>
+                <li><a href="#about" class="nav-link" data-i18n="nav.about">About</a></li>
+                <li><a href="#maracatu" class="nav-link" data-i18n="nav.maracatu">Maracatu</a></li>
+                <li><a href="#parades" class="nav-link" data-i18n="nav.parades">Parades</a></li>
+                <li><a href="#gallery" class="nav-link" data-i18n="nav.gallery">Gallery</a></li>
+                <li><a href="#contact" class="nav-link nav-link-cta" data-i18n="nav.contact">Contact</a></li>
             </ul>
+            <div class="lang-switcher" id="langSwitcher">
+                <button class="lang-btn active" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="fr">FR</button>
+                <button class="lang-btn" data-lang="pt">PT</button>
+            </div>
         </div>
     </nav>
 
@@ -74,15 +79,15 @@
                 </div>
                 <h1 class="hero-title">BAQUE DE<br>CHUVA</h1>
             </div>
-            <p class="hero-subtitle">Brussels Maracatu &bull; Founded in 2016</p>
-            <p class="hero-tagline">The Rain Beat of Pernambuco in the Heart of Europe</p>
+            <p class="hero-subtitle" data-i18n="hero.subtitle">Brussels Maracatu &bull; Founded in 2016</p>
+            <p class="hero-tagline" data-i18n="hero.tagline">The Rain Beat of Pernambuco in the Heart of Europe</p>
             <div class="hero-cta">
-                <a href="#about" class="btn btn-primary">Discover</a>
-                <a href="#contact" class="btn btn-outline">Join Us</a>
+                <a href="#about" class="btn btn-primary" data-i18n="hero.discover">Discover</a>
+                <a href="#contact" class="btn btn-outline" data-i18n="hero.join">Join Us</a>
             </div>
         </div>
         <div class="scroll-indicator">
-            <span>Scroll</span>
+            <span data-i18n="hero.scroll">Scroll</span>
             <div class="scroll-arrow"></div>
         </div>
     </section>
@@ -96,25 +101,25 @@
                     <div class="image-accent"></div>
                 </div>
                 <div class="about-content reveal">
-                    <span class="section-tag">Who We Are</span>
-                    <h2 class="section-title">Born in Brussels,<br>Rooted in Recife</h2>
-                    <p class="lead">A Brazilian fanfare bringing the power of maracatu to Europe since 2016.</p>
+                    <span class="section-tag" data-i18n="about.tag">Who We Are</span>
+                    <h2 class="section-title" data-i18n="about.title">Born in Brussels,<br>Rooted in Recife</h2>
+                    <p class="lead" data-i18n="about.lead">A Brazilian fanfare bringing the power of maracatu to Europe since 2016.</p>
                     <div class="about-text">
-                        <p>Baque de Chuva is a Brussels-based percussion collective made up of residents from diverse musical traditions and origins. United by a shared passion for the ancestral rhythms of Pernambuco, we reappropriate traditional <strong>Maracatu de Baque Virado</strong> &mdash; a festive, powerful, and deeply danceable music that accompanies popular carnivals in northeastern Brazil.</p>
-                        <p>Our name, <em>"Baque de Chuva"</em> (the Rain Beat), evokes the thunderous power of our drums echoing like tropical rain &mdash; unstoppable, cleansing, and full of life.</p>
+                        <p data-i18n="about.text1">Baque de Chuva is a Brussels-based percussion collective made up of residents from diverse musical traditions and origins. United by a shared passion for the ancestral rhythms of Pernambuco, we reappropriate traditional <strong>Maracatu de Baque Virado</strong> &mdash; a festive, powerful, and deeply danceable music that accompanies popular carnivals in northeastern Brazil.</p>
+                        <p data-i18n="about.text2">Our name, <em>"Baque de Chuva"</em> (the Rain Beat), evokes the thunderous power of our drums echoing like tropical rain &mdash; unstoppable, cleansing, and full of life.</p>
                     </div>
                     <div class="about-stats">
                         <div class="stat">
                             <span class="stat-number" data-count="2016">2016</span>
-                            <span class="stat-label">Founded</span>
+                            <span class="stat-label" data-i18n="about.founded">Founded</span>
                         </div>
                         <div class="stat">
                             <span class="stat-number">30+</span>
-                            <span class="stat-label">Members</span>
+                            <span class="stat-label" data-i18n="about.members">Members</span>
                         </div>
                         <div class="stat">
                             <span class="stat-number">Brussels</span>
-                            <span class="stat-label">Home Base</span>
+                            <span class="stat-label" data-i18n="about.homebase">Home Base</span>
                         </div>
                     </div>
                 </div>
@@ -129,39 +134,39 @@
         </div>
         <div class="container">
             <div class="maracatu-content reveal">
-                <span class="section-tag">Tradition</span>
+                <span class="section-tag" data-i18n="maracatu.tag">Tradition</span>
                 <h2 class="section-title">Maracatu de Baque Virado</h2>
-                <p class="lead">An Afro-Brazilian tradition of strength and resistance born in Pernambuco</p>
+                <p class="lead" data-i18n="maracatu.lead">An Afro-Brazilian tradition of strength and resistance born in Pernambuco</p>
                 <div class="maracatu-text">
-                    <p>Maracatu Na&ccedil;&atilde;o is a musical rhythm, dance, and ritual that originated in Recife, Pernambuco. Rooted in the coronation ceremonies of the <em>Reis do Congo</em> (Kings of Congo) &mdash; enslaved Africans who were granted symbolic leadership &mdash; maracatu carries centuries of resistance, spirituality, and cultural identity.</p>
-                    <p>With its hypnotic percussion and royal processions, maracatu transforms streets into sacred spaces during Carnival, when the Na&ccedil;&otilde;es (nations) parade through Recife and Olinda.</p>
+                    <p data-i18n="maracatu.text1">Maracatu Na&ccedil;&atilde;o is a musical rhythm, dance, and ritual that originated in Recife, Pernambuco. Rooted in the coronation ceremonies of the <em>Reis do Congo</em> (Kings of Congo) &mdash; enslaved Africans who were granted symbolic leadership &mdash; maracatu carries centuries of resistance, spirituality, and cultural identity.</p>
+                    <p data-i18n="maracatu.text2">With its hypnotic percussion and royal processions, maracatu transforms streets into sacred spaces during Carnival, when the Na&ccedil;&otilde;es (nations) parade through Recife and Olinda.</p>
                 </div>
                 <div class="maracatu-features">
                     <div class="feature">
                         <div class="feature-icon">
                             <svg viewBox="0 0 48 48" width="36" height="36"><circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="3" fill="none"/><circle cx="24" cy="18" r="6" fill="currentColor"/><path d="M12 38 Q24 28 36 38" stroke="currentColor" stroke-width="3" fill="none"/></svg>
                         </div>
-                        <h4>Na&ccedil;&atilde;o</h4>
-                        <p>Traditional maracatu group, organized as a "nation" with its own identity, songs, and spiritual foundation</p>
+                        <h4 data-i18n="maracatu.nacao_title">Na&ccedil;&atilde;o</h4>
+                        <p data-i18n="maracatu.nacao_desc">Traditional maracatu group, organized as a "nation" with its own identity, songs, and spiritual foundation</p>
                     </div>
                     <div class="feature">
                         <div class="feature-icon">
                             <svg viewBox="0 0 48 48" width="36" height="36"><path d="M24 8 L28 20 L40 20 L30 28 L34 40 L24 32 L14 40 L18 28 L8 20 L20 20 Z" fill="currentColor"/></svg>
                         </div>
-                        <h4>Carnival</h4>
-                        <p>The sacred moment when nations parade through the streets of Recife in royal processions</p>
+                        <h4 data-i18n="maracatu.carnival_title">Carnival</h4>
+                        <p data-i18n="maracatu.carnival_desc">The sacred moment when nations parade through the streets of Recife in royal processions</p>
                     </div>
                     <div class="feature">
                         <div class="feature-icon">
                             <svg viewBox="0 0 48 48" width="36" height="36"><circle cx="24" cy="16" r="8" stroke="currentColor" stroke-width="3" fill="none"/><path d="M10 44 L14 28 Q24 22 34 28 L38 44" stroke="currentColor" stroke-width="3" fill="none"/><path d="M20 8 L24 2 L28 8" stroke="currentColor" stroke-width="2" fill="none"/></svg>
                         </div>
-                        <h4>Resistance</h4>
-                        <p>An expression of Black culture and Afro-Brazilian identity, fundamental to Pernambuco's heritage</p>
+                        <h4 data-i18n="maracatu.resistance_title">Resistance</h4>
+                        <p data-i18n="maracatu.resistance_desc">An expression of Black culture and Afro-Brazilian identity, fundamental to Pernambuco's heritage</p>
                     </div>
                 </div>
 
                 <div class="nacoes-showcase">
-                    <h3>Legendary Na&ccedil;&otilde;es</h3>
+                    <h3 data-i18n="maracatu.legendary">Legendary Na&ccedil;&otilde;es</h3>
                     <div class="nacoes-tags">
                         <span class="nacao-tag">Na&ccedil;&atilde;o Estrela Brilhante do Recife</span>
                         <span class="nacao-tag">Na&ccedil;&atilde;o Le&atilde;o Coroado</span>
@@ -180,12 +185,12 @@
         <div class="container">
             <div class="estrela-grid">
                 <div class="estrela-content reveal">
-                    <span class="section-tag">Our Connection</span>
+                    <span class="section-tag" data-i18n="estrela.tag">Our Connection</span>
                     <h2 class="section-title">Na&ccedil;&atilde;o Estrela Brilhante do Recife</h2>
-                    <p class="lead">Trov&atilde;o Azul &mdash; The Blue Thunder</p>
+                    <p class="lead" data-i18n="estrela.lead">Trov&atilde;o Azul &mdash; The Blue Thunder</p>
                     <div class="estrela-text">
-                        <p>Baque de Chuva maintains a deep connection to <strong>Maracatu Na&ccedil;&atilde;o Estrela Brilhante do Recife</strong>, one of the most legendary and traditional maracatu nations, founded in <strong>1906</strong>. Known as <em>Trov&atilde;o Azul</em> (Blue Thunder), this Na&ccedil;&atilde;o is a cornerstone of Pernambuco's cultural identity.</p>
-                        <p>Through regular exchanges, workshops, and pilgrimages to Recife, we stay connected to the living source of maracatu. This relationship shapes our musical identity and deepens our respect for the tradition we carry across the Atlantic.</p>
+                        <p data-i18n="estrela.text1">Baque de Chuva maintains a deep connection to <strong>Maracatu Na&ccedil;&atilde;o Estrela Brilhante do Recife</strong>, one of the most legendary and traditional maracatu nations, founded in <strong>1906</strong>. Known as <em>Trov&atilde;o Azul</em> (Blue Thunder), this Na&ccedil;&atilde;o is a cornerstone of Pernambuco's cultural identity.</p>
+                        <p data-i18n="estrela.text2">Through regular exchanges, workshops, and pilgrimages to Recife, we stay connected to the living source of maracatu. This relationship shapes our musical identity and deepens our respect for the tradition we carry across the Atlantic.</p>
                     </div>
                 </div>
                 <div class="estrela-image reveal">
@@ -206,27 +211,27 @@
                     <img src="images/agbe-player.jpg" alt="Baque de Chuva parade" loading="lazy">
                 </div>
                 <div class="parades-content reveal">
-                    <span class="section-tag">Events</span>
-                    <h2 class="section-title">Parades &amp; Performances</h2>
-                    <p class="lead">Maracatu: music made to move through the streets</p>
-                    <p>Explosive and captivating, maracatu transforms every parade into an unforgettable experience. The percussive energy of the group sweeps everything in its path, filling public spaces with the ancestral power of Pernambuco.</p>
+                    <span class="section-tag" data-i18n="parades.tag">Events</span>
+                    <h2 class="section-title" data-i18n="parades.title">Parades &amp; Performances</h2>
+                    <p class="lead" data-i18n="parades.lead">Maracatu: music made to move through the streets</p>
+                    <p data-i18n="parades.text">Explosive and captivating, maracatu transforms every parade into an unforgettable experience. The percussive energy of the group sweeps everything in its path, filling public spaces with the ancestral power of Pernambuco.</p>
 
                     <div class="parade-options">
                         <div class="parade-option">
-                            <h4>Street Parades</h4>
-                            <p>Full cortège with drums, dancers in traditional costumes, and the iconic royal court procession.</p>
+                            <h4 data-i18n="parades.street_title">Street Parades</h4>
+                            <p data-i18n="parades.street_desc">Full cortège with drums, dancers in traditional costumes, and the iconic royal court procession.</p>
                         </div>
                         <div class="parade-option">
-                            <h4>Festival Performances</h4>
-                            <p>High-energy stage and street performances for festivals, carnivals, and cultural events across Belgium and Europe.</p>
+                            <h4 data-i18n="parades.festival_title">Festival Performances</h4>
+                            <p data-i18n="parades.festival_desc">High-energy stage and street performances for festivals, carnivals, and cultural events across Belgium and Europe.</p>
                         </div>
                         <div class="parade-option">
-                            <h4>Workshops</h4>
-                            <p>Interactive percussion workshops introducing participants to the rhythms and instruments of maracatu.</p>
+                            <h4 data-i18n="parades.workshop_title">Workshops</h4>
+                            <p data-i18n="parades.workshop_desc">Interactive percussion workshops introducing participants to the rhythms and instruments of maracatu.</p>
                         </div>
                     </div>
 
-                    <a href="#contact" class="btn btn-primary">Book Us</a>
+                    <a href="#contact" class="btn btn-primary" data-i18n="parades.book">Book Us</a>
                 </div>
             </div>
         </div>
@@ -236,9 +241,9 @@
     <section class="section section-gallery" id="gallery">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">Moments</span>
-                <h2 class="section-title">Gallery</h2>
-                <p class="section-subtitle">Capturing the energy and joy of Baque de Chuva</p>
+                <span class="section-tag" data-i18n="gallery.tag">Moments</span>
+                <h2 class="section-title" data-i18n="gallery.title">Gallery</h2>
+                <p class="section-subtitle" data-i18n="gallery.subtitle">Capturing the energy and joy of Baque de Chuva</p>
             </div>
         </div>
         <div class="gallery-strip">
@@ -262,9 +267,9 @@
         <div class="container">
             <div class="contact-grid">
                 <div class="contact-info reveal">
-                    <span class="section-tag">Join Us</span>
-                    <h2 class="section-title">Become Part of the Rain</h2>
-                    <p class="contact-intro">Whether you're an experienced percussionist or a complete beginner, Baque de Chuva welcomes everyone who feels the call of the drum.</p>
+                    <span class="section-tag" data-i18n="contact.tag">Join Us</span>
+                    <h2 class="section-title" data-i18n="contact.title">Become Part of the Rain</h2>
+                    <p class="contact-intro" data-i18n="contact.intro">Whether you're an experienced percussionist or a complete beginner, Baque de Chuva welcomes everyone who feels the call of the drum.</p>
 
                     <div class="contact-details">
                         <div class="contact-item">
@@ -272,9 +277,9 @@
                                 <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
                             </div>
                             <div>
-                                <h4>Location</h4>
-                                <p>Brussels, Belgium</p>
-                                <p class="contact-sub">Rehearsals in the heart of the city</p>
+                                <h4 data-i18n="contact.location">Location</h4>
+                                <p data-i18n="contact.location_city">Brussels, Belgium</p>
+                                <p class="contact-sub" data-i18n="contact.location_sub">Rehearsals in the heart of the city</p>
                             </div>
                         </div>
 
@@ -283,9 +288,9 @@
                                 <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
                             </div>
                             <div>
-                                <h4>Rehearsals</h4>
-                                <p>Weekly sessions</p>
-                                <p class="contact-sub">All levels welcome &mdash; no experience needed</p>
+                                <h4 data-i18n="contact.rehearsals">Rehearsals</h4>
+                                <p data-i18n="contact.rehearsals_freq">Weekly sessions</p>
+                                <p class="contact-sub" data-i18n="contact.rehearsals_sub">All levels welcome &mdash; no experience needed</p>
                             </div>
                         </div>
 
@@ -294,9 +299,9 @@
                                 <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
                             </div>
                             <div>
-                                <h4>Community</h4>
+                                <h4 data-i18n="contact.community">Community</h4>
                                 <p>Part of ASBL KWA!</p>
-                                <p class="contact-sub">A vibrant multicultural collective</p>
+                                <p class="contact-sub" data-i18n="contact.community_sub">A vibrant multicultural collective</p>
                             </div>
                         </div>
                     </div>
@@ -331,7 +336,7 @@
                     </svg>
                     <span>BAQUE DE CHUVA</span>
                 </div>
-                <p class="footer-tagline">Brussels Maracatu &bull; Founded 2016 &bull; ASBL KWA!</p>
+                <p class="footer-tagline" data-i18n="footer.tagline">Brussels Maracatu &bull; Founded 2016 &bull; ASBL KWA!</p>
                 <div class="footer-social">
                     <a href="https://www.instagram.com/baquedechuva/" target="_blank" rel="noopener">Instagram</a>
                     <span>&bull;</span>
