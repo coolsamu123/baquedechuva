@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baque de Chuva - Brussels Maracatu</title>
+    <meta name="description" content="Baque de Chuva - Maracatu de Baque Virado in Brussels. Brazilian percussion, parades and concerts. Founded in 2016.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥁</text></svg>">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Loader -->
+    <div class="loader" id="loader">
+        <div class="loader-inner">
+            <div class="loader-drops">
+                <span></span><span></span><span></span>
+            </div>
+            <p class="loader-text">BAQUE DE CHUVA</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-icon">
+                    <svg viewBox="0 0 100 100" width="28" height="28">
+                        <circle cx="50" cy="35" r="8" fill="currentColor"/>
+                        <path d="M30 50 Q50 80 70 50" stroke="currentColor" stroke-width="6" fill="none" stroke-linecap="round"/>
+                        <circle cx="35" cy="60" r="4" fill="currentColor" opacity="0.6"/>
+                        <circle cx="65" cy="55" r="3" fill="currentColor" opacity="0.4"/>
+                    </svg>
+                </span>
+                <span class="logo-text">BAQUE DE CHUVA</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#maracatu" class="nav-link">Maracatu</a></li>
+                <li><a href="#instruments" class="nav-link">Instruments</a></li>
+                <li><a href="#parades" class="nav-link">Parades</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#contact" class="nav-link nav-link-cta">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <img src="images/hero-group.jpg" alt="Baque de Chuva group" class="hero-bg-img">
+            <div class="hero-overlay"></div>
+        </div>
+        <!-- Rain particles -->
+        <div class="rain-container" id="rainContainer"></div>
+        <div class="hero-content">
+            <div class="hero-logo">
+                <div class="logo-symbol">
+                    <svg viewBox="0 0 120 120" class="logo-svg">
+                        <circle cx="60" cy="30" r="10" fill="currentColor" opacity="0.9"/>
+                        <circle cx="40" cy="55" r="6" fill="currentColor" opacity="0.7"/>
+                        <circle cx="80" cy="50" r="7" fill="currentColor" opacity="0.6"/>
+                        <circle cx="55" cy="70" r="5" fill="currentColor" opacity="0.5"/>
+                        <circle cx="70" cy="75" r="4" fill="currentColor" opacity="0.4"/>
+                        <path d="M25 85 Q60 110 95 85" stroke="currentColor" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.8"/>
+                    </svg>
+                </div>
+                <h1 class="hero-title">BAQUE DE<br>CHUVA</h1>
+            </div>
+            <p class="hero-subtitle">Brussels Maracatu &bull; Founded in 2016</p>
+            <p class="hero-tagline">The Rain Beat of Pernambuco in the Heart of Europe</p>
+            <div class="hero-cta">
+                <a href="#about" class="btn btn-primary">Discover</a>
+                <a href="#contact" class="btn btn-outline">Join Us</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section section-about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image reveal">
+                    <img src="images/drummer-grandplace.jpg" alt="Baque de Chuva at Grand Place Brussels" loading="lazy">
+                    <div class="image-accent"></div>
+                </div>
+                <div class="about-content reveal">
+                    <span class="section-tag">Who We Are</span>
+                    <h2 class="section-title">Born in Brussels,<br>Rooted in Recife</h2>
+                    <p class="lead">A Brazilian fanfare bringing the power of maracatu to Europe since 2016.</p>
+                    <div class="about-text">
+                        <p>Baque de Chuva is a Brussels-based percussion collective made up of residents from diverse musical traditions and origins. United by a shared passion for the ancestral rhythms of Pernambuco, we reappropriate traditional <strong>Maracatu de Baque Virado</strong> &mdash; a festive, powerful, and deeply danceable music that accompanies popular carnivals in northeastern Brazil.</p>
+                        <p>Our name, <em>"Baque de Chuva"</em> (the Rain Beat), evokes the thunderous power of our drums echoing like tropical rain &mdash; unstoppable, cleansing, and full of life.</p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number" data-count="2016">2016</span>
+                            <span class="stat-label">Founded</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">30+</span>
+                            <span class="stat-label">Members</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">Brussels</span>
+                            <span class="stat-label">Home Base</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Maracatu Tradition Section -->
+    <section class="section section-maracatu" id="maracatu">
+        <div class="parallax-bg">
+            <img src="images/night-group.jpg" alt="Maracatu tradition" loading="lazy">
+        </div>
+        <div class="container">
+            <div class="maracatu-content reveal">
+                <span class="section-tag">Tradition</span>
+                <h2 class="section-title">Maracatu de Baque Virado</h2>
+                <p class="lead">An Afro-Brazilian tradition of strength and resistance born in Pernambuco</p>
+                <div class="maracatu-text">
+                    <p>Maracatu Na&ccedil;&atilde;o is a musical rhythm, dance, and ritual that originated in Recife, Pernambuco. Rooted in the coronation ceremonies of the <em>Reis do Congo</em> (Kings of Congo) &mdash; enslaved Africans who were granted symbolic leadership &mdash; maracatu carries centuries of resistance, spirituality, and cultural identity.</p>
+                    <p>With its hypnotic percussion and royal processions, maracatu transforms streets into sacred spaces during Carnival, when the Na&ccedil;&otilde;es (nations) parade through Recife and Olinda.</p>
+                </div>
+                <div class="maracatu-features">
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 48 48" width="36" height="36"><circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="3" fill="none"/><circle cx="24" cy="18" r="6" fill="currentColor"/><path d="M12 38 Q24 28 36 38" stroke="currentColor" stroke-width="3" fill="none"/></svg>
+                        </div>
+                        <h4>Na&ccedil;&atilde;o</h4>
+                        <p>Traditional maracatu group, organized as a "nation" with its own identity, songs, and spiritual foundation</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 48 48" width="36" height="36"><path d="M24 8 L28 20 L40 20 L30 28 L34 40 L24 32 L14 40 L18 28 L8 20 L20 20 Z" fill="currentColor"/></svg>
+                        </div>
+                        <h4>Carnival</h4>
+                        <p>The sacred moment when nations parade through the streets of Recife in royal processions</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 48 48" width="36" height="36"><circle cx="24" cy="16" r="8" stroke="currentColor" stroke-width="3" fill="none"/><path d="M10 44 L14 28 Q24 22 34 28 L38 44" stroke="currentColor" stroke-width="3" fill="none"/><path d="M20 8 L24 2 L28 8" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+                        </div>
+                        <h4>Resistance</h4>
+                        <p>An expression of Black culture and Afro-Brazilian identity, fundamental to Pernambuco's heritage</p>
+                    </div>
+                </div>
+
+                <div class="nacoes-showcase">
+                    <h3>Legendary Na&ccedil;&otilde;es</h3>
+                    <div class="nacoes-tags">
+                        <span class="nacao-tag">Na&ccedil;&atilde;o Estrela Brilhante do Recife</span>
+                        <span class="nacao-tag">Na&ccedil;&atilde;o Le&atilde;o Coroado</span>
+                        <span class="nacao-tag">Na&ccedil;&atilde;o Porto Rico</span>
+                        <span class="nacao-tag">Na&ccedil;&atilde;o Estrela Brilhante de Igarassu</span>
+                        <span class="nacao-tag">Na&ccedil;&atilde;o Encanto do Dend&ecirc;</span>
+                        <span class="nacao-tag">Na&ccedil;&atilde;o Ra&iacute;zes de &Aacute;frica</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instruments Section -->
+    <section class="section section-instruments" id="instruments">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Instruments</span>
+                <h2 class="section-title">The Voices of Maracatu</h2>
+                <p class="section-subtitle">Five traditional instruments that create the thunderous sound of baque virado</p>
+            </div>
+
+            <div class="instruments-grid">
+                <div class="instrument-card reveal">
+                    <div class="instrument-visual">
+                        <div class="instrument-emoji">
+                            <svg viewBox="0 0 80 80" width="64" height="64">
+                                <ellipse cx="40" cy="20" rx="25" ry="12" fill="none" stroke="currentColor" stroke-width="3"/>
+                                <ellipse cx="40" cy="60" rx="25" ry="12" fill="none" stroke="currentColor" stroke-width="3"/>
+                                <line x1="15" y1="20" x2="15" y2="60" stroke="currentColor" stroke-width="3"/>
+                                <line x1="65" y1="20" x2="65" y2="60" stroke="currentColor" stroke-width="3"/>
+                                <line x1="18" y1="22" x2="25" y2="58" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4,3"/>
+                                <line x1="62" y1="22" x2="55" y2="58" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4,3"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="instrument-content">
+                        <h3>Alfaia</h3>
+                        <p>The thundering heart of maracatu. A large wooden rope-tuned bass drum that gives the deep pulse and characteristic power. Originally made from Maca&iacute;ba tree trunks with sisal rope lacing.</p>
+                    </div>
+                </div>
+
+                <div class="instrument-card reveal">
+                    <div class="instrument-visual">
+                        <div class="instrument-emoji">
+                            <svg viewBox="0 0 80 80" width="64" height="64">
+                                <ellipse cx="40" cy="30" rx="22" ry="10" fill="none" stroke="currentColor" stroke-width="3"/>
+                                <ellipse cx="40" cy="50" rx="22" ry="10" fill="none" stroke="currentColor" stroke-width="3"/>
+                                <line x1="18" y1="30" x2="18" y2="50" stroke="currentColor" stroke-width="3"/>
+                                <line x1="62" y1="30" x2="62" y2="50" stroke="currentColor" stroke-width="3"/>
+                                <line x1="20" y1="48" x2="60" y2="48" stroke="currentColor" stroke-width="1" stroke-dasharray="2,2" opacity="0.6"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="instrument-content">
+                        <h3>Caixa de Guerra</h3>
+                        <p>The war snare drum. A high-pitched drum with a snare wire producing a characteristic buzzing, rolled sound. Played with flexible sticks for intricate rhythmic textures.</p>
+                    </div>
+                </div>
+
+                <div class="instrument-card reveal">
+                    <div class="instrument-visual">
+                        <div class="instrument-emoji">
+                            <svg viewBox="0 0 80 80" width="64" height="64">
+                                <path d="M30 20 L30 65 L50 65 L50 20" stroke="currentColor" stroke-width="3" fill="none"/>
+                                <path d="M30 20 Q40 10 50 20" stroke="currentColor" stroke-width="3" fill="none"/>
+                                <line x1="40" y1="65" x2="40" y2="75" stroke="currentColor" stroke-width="3"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="instrument-content">
+                        <h3>Gongu&ecirc;</h3>
+                        <p>The guiding bell. An iron bell that structures the rhythm and serves as the temporal reference for all musicians. Its syncopated phrases allow great freedom for improvisation.</p>
+                    </div>
+                </div>
+
+                <div class="instrument-card reveal">
+                    <div class="instrument-visual">
+                        <div class="instrument-emoji">
+                            <svg viewBox="0 0 80 80" width="64" height="64">
+                                <circle cx="40" cy="45" r="18" fill="none" stroke="currentColor" stroke-width="3"/>
+                                <path d="M40 27 L40 15" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                                <circle cx="28" cy="35" r="2" fill="currentColor"/>
+                                <circle cx="52" cy="35" r="2" fill="currentColor"/>
+                                <circle cx="32" cy="50" r="2" fill="currentColor"/>
+                                <circle cx="48" cy="50" r="2" fill="currentColor"/>
+                                <circle cx="40" cy="58" r="2" fill="currentColor"/>
+                                <circle cx="25" cy="45" r="2" fill="currentColor"/>
+                                <circle cx="55" cy="45" r="2" fill="currentColor"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="instrument-content">
+                        <h3>Agb&ecirc;</h3>
+                        <p>Also known as xequer&ecirc;. A gourd enveloped in a web of beads that provides brilliance and groove. Born in the terreiros (religious houses) and brought into maracatu percussion.</p>
+                    </div>
+                </div>
+
+                <div class="instrument-card reveal">
+                    <div class="instrument-visual">
+                        <div class="instrument-emoji">
+                            <svg viewBox="0 0 80 80" width="64" height="64">
+                                <rect x="28" y="20" width="24" height="45" rx="12" fill="none" stroke="currentColor" stroke-width="3"/>
+                                <circle cx="40" cy="35" r="2" fill="currentColor"/>
+                                <circle cx="40" cy="45" r="2" fill="currentColor"/>
+                                <circle cx="40" cy="55" r="2" fill="currentColor"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="instrument-content">
+                        <h3>Mineiro</h3>
+                        <p>A metal cylindrical shaker filled with metal shot or dried seeds. It provides a shimmering, continuous texture that weaves through the ensemble like a silver thread.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Estrela Brilhante Connection -->
+    <section class="section section-estrela">
+        <div class="container">
+            <div class="estrela-grid">
+                <div class="estrela-content reveal">
+                    <span class="section-tag">Our Connection</span>
+                    <h2 class="section-title">Na&ccedil;&atilde;o Estrela Brilhante do Recife</h2>
+                    <p class="lead">Trov&atilde;o Azul &mdash; The Blue Thunder</p>
+                    <div class="estrela-text">
+                        <p>Baque de Chuva maintains a deep connection to <strong>Maracatu Na&ccedil;&atilde;o Estrela Brilhante do Recife</strong>, one of the most legendary and traditional maracatu nations, founded in <strong>1906</strong>. Known as <em>Trov&atilde;o Azul</em> (Blue Thunder), this Na&ccedil;&atilde;o is a cornerstone of Pernambuco's cultural identity.</p>
+                        <p>Through regular exchanges, workshops, and pilgrimages to Recife, we stay connected to the living source of maracatu. This relationship shapes our musical identity and deepens our respect for the tradition we carry across the Atlantic.</p>
+                    </div>
+                </div>
+                <div class="estrela-image reveal">
+                    <img src="images/drummer-grandplace.jpg" alt="Estrela Brilhante drum" loading="lazy">
+                    <div class="estrela-badge">
+                        <span>Est. 1906</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parades Section -->
+    <section class="section section-parades" id="parades">
+        <div class="container">
+            <div class="parades-grid">
+                <div class="parades-image reveal">
+                    <img src="images/agbe-player.jpg" alt="Baque de Chuva parade" loading="lazy">
+                </div>
+                <div class="parades-content reveal">
+                    <span class="section-tag">Events</span>
+                    <h2 class="section-title">Parades &amp; Performances</h2>
+                    <p class="lead">Maracatu: music made to move through the streets</p>
+                    <p>Explosive and captivating, maracatu transforms every parade into an unforgettable experience. The percussive energy of the group sweeps everything in its path, filling public spaces with the ancestral power of Pernambuco.</p>
+
+                    <div class="parade-options">
+                        <div class="parade-option">
+                            <h4>Street Parades</h4>
+                            <p>Full cortège with drums, dancers in traditional costumes, and the iconic royal court procession.</p>
+                        </div>
+                        <div class="parade-option">
+                            <h4>Festival Performances</h4>
+                            <p>High-energy stage and street performances for festivals, carnivals, and cultural events across Belgium and Europe.</p>
+                        </div>
+                        <div class="parade-option">
+                            <h4>Workshops</h4>
+                            <p>Interactive percussion workshops introducing participants to the rhythms and instruments of maracatu.</p>
+                        </div>
+                    </div>
+
+                    <a href="#contact" class="btn btn-primary">Book Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section section-gallery" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Moments</span>
+                <h2 class="section-title">Gallery</h2>
+                <p class="section-subtitle">Capturing the energy and joy of Baque de Chuva</p>
+            </div>
+        </div>
+        <div class="gallery-strip">
+            <div class="gallery-track">
+                <img src="images/hero-group.jpg" alt="Group photo" loading="lazy">
+                <img src="images/drummer-grandplace.jpg" alt="Grand Place performance" loading="lazy">
+                <img src="images/night-group.jpg" alt="Night carnival" loading="lazy">
+                <img src="images/agbe-player.jpg" alt="Agbê player" loading="lazy">
+                <img src="images/portrait-player.jpg" alt="Performer portrait" loading="lazy">
+                <img src="images/hero-group.jpg" alt="Group photo" loading="lazy">
+                <img src="images/drummer-grandplace.jpg" alt="Grand Place performance" loading="lazy">
+                <img src="images/night-group.jpg" alt="Night carnival" loading="lazy">
+                <img src="images/agbe-player.jpg" alt="Agbê player" loading="lazy">
+                <img src="images/portrait-player.jpg" alt="Performer portrait" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- Join / Contact Section -->
+    <section class="section section-contact" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <span class="section-tag">Join Us</span>
+                    <h2 class="section-title">Become Part of the Rain</h2>
+                    <p class="contact-intro">Whether you're an experienced percussionist or a complete beginner, Baque de Chuva welcomes everyone who feels the call of the drum.</p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            </div>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Brussels, Belgium</p>
+                                <p class="contact-sub">Rehearsals in the heart of the city</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                            </div>
+                            <div>
+                                <h4>Rehearsals</h4>
+                                <p>Weekly sessions</p>
+                                <p class="contact-sub">All levels welcome &mdash; no experience needed</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                            </div>
+                            <div>
+                                <h4>Community</h4>
+                                <p>Part of ASBL KWA!</p>
+                                <p class="contact-sub">A vibrant multicultural collective</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/baquedechuva/" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                        </a>
+                        <a href="https://www.facebook.com/baquedechuva" target="_blank" rel="noopener" class="social-link" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-image reveal">
+                    <img src="images/portrait-player.jpg" alt="Baque de Chuva performer" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <svg viewBox="0 0 120 120" width="32" height="32">
+                        <circle cx="60" cy="30" r="10" fill="currentColor" opacity="0.9"/>
+                        <circle cx="40" cy="55" r="6" fill="currentColor" opacity="0.7"/>
+                        <circle cx="80" cy="50" r="7" fill="currentColor" opacity="0.6"/>
+                        <path d="M25 85 Q60 110 95 85" stroke="currentColor" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.8"/>
+                    </svg>
+                    <span>BAQUE DE CHUVA</span>
+                </div>
+                <p class="footer-tagline">Brussels Maracatu &bull; Founded 2016 &bull; ASBL KWA!</p>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/baquedechuva/" target="_blank" rel="noopener">Instagram</a>
+                    <span>&bull;</span>
+                    <a href="https://www.facebook.com/baquedechuva" target="_blank" rel="noopener">Facebook</a>
+                </div>
+                <p class="footer-copy">&copy; 2024 Baque de Chuva. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
