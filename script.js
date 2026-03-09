@@ -316,7 +316,7 @@ if (window.location.hash) {
    Load Content from content.json
    ======================================== */
 function loadContent() {
-    fetch('content.json')
+    fetch('content.json?v=' + Date.now())
         .then(res => res.json())
         .then(data => {
             siteContent = data;
