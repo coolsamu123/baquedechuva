@@ -342,7 +342,8 @@ function applyImages(images) {
         maracatu_background: '.parallax-bg img',
         estrela_photo: '.estrela-image img',
         parades_photo: '.parades-image img',
-        contact_photo: '.contact-image img'
+        contact_photo: '.contact-image img',
+        workshop_photo: '.workshop-photo img'
     };
     for (const [key, selector] of Object.entries(map)) {
         if (images[key]) {
@@ -459,6 +460,7 @@ const FALLBACK_TRANSLATIONS = {
         'workshop.tag': 'Save the Date',
         'workshop.title': 'Maracatu Workshop',
         'workshop.with': 'with Mestre Fabinho',
+        'workshop.photo_caption': 'Mestre Fabinho',
         'workshop.intro': 'A hands-on maracatu workshop led by Mestre Fabinho. Open to everyone \u2014 no experience needed. Limited spots, register now to secure your place.',
         'workshop.date_label': 'Date',
         'workshop.date_value': '25.07',
@@ -548,6 +550,7 @@ const FALLBACK_TRANSLATIONS = {
         'workshop.tag': 'R\u00e9servez la date',
         'workshop.title': 'Atelier de Maracatu',
         'workshop.with': 'avec Mestre Fabinho',
+        'workshop.photo_caption': 'Mestre Fabinho',
         'workshop.intro': 'Un atelier de maracatu anim\u00e9 par Mestre Fabinho. Ouvert \u00e0 tous \u2014 aucune exp\u00e9rience requise. Places limit\u00e9es, inscrivez-vous d\u00e8s maintenant pour r\u00e9server la v\u00f4tre.',
         'workshop.date_label': 'Date',
         'workshop.date_value': '25.07',
@@ -637,6 +640,7 @@ const FALLBACK_TRANSLATIONS = {
         'workshop.tag': 'Reserve a data',
         'workshop.title': 'Workshop de Maracatu',
         'workshop.with': 'com Mestre Fabinho',
+        'workshop.photo_caption': 'Mestre Fabinho',
         'workshop.intro': 'Um workshop de maracatu com Mestre Fabinho. Aberto a todos \u2014 nenhuma experi\u00eancia necess\u00e1ria. Vagas limitadas, inscreva-se j\u00e1 para garantir seu lugar.',
         'workshop.date_label': 'Data',
         'workshop.date_value': '25.07',
