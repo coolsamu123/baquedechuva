@@ -1546,6 +1546,38 @@ ul {
 }
 
 /* Event info */
+.workshop-photo {
+    position: relative;
+    width: 100%;
+    max-width: 360px;
+    margin: 0 0 2rem;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    border: 3px solid var(--color-accent);
+    box-shadow: var(--shadow-xl);
+}
+
+.workshop-photo img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    object-position: center top;
+}
+
+.workshop-photo-caption {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 2rem 1.25rem 0.9rem;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    color: var(--color-white);
+    background: linear-gradient(transparent, rgba(15, 37, 72, 0.92));
+}
+
 .workshop-badge {
     display: inline-block;
     padding: 0.4rem 1.1rem;
@@ -1790,6 +1822,10 @@ ul {
         margin-right: auto;
     }
     .workshop-intro {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .workshop-photo {
         margin-left: auto;
         margin-right: auto;
     }
