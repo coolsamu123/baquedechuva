@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥁</text></svg>">
-    <link rel="stylesheet" href="style.css?v=2">
+    <link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
 
@@ -47,7 +47,7 @@
                 <li><a href="#maracatu" class="nav-link" data-i18n="nav.maracatu">Maracatu</a></li>
                 <li><a href="#parades" class="nav-link" data-i18n="nav.parades">Parades</a></li>
                 <li><a href="#gallery" class="nav-link" data-i18n="nav.gallery">Gallery</a></li>
-                <li><a href="#contact" class="nav-link nav-link-cta" data-i18n="nav.contact">Contact</a></li>
+                <li><a href="#workshop" class="nav-link nav-link-cta" data-i18n="nav.workshop">Workshop</a></li>
             </ul>
             <div class="lang-switcher" id="langSwitcher">
                 <button class="lang-btn active" data-lang="en">EN</button>
@@ -82,13 +82,89 @@
             <p class="hero-subtitle" data-i18n="hero.subtitle">Brussels Maracatu &bull; Founded in 2016</p>
             <p class="hero-tagline" data-i18n="hero.tagline">The Rain Beat of Pernambuco in the Heart of Europe</p>
             <div class="hero-cta">
-                <a href="#about" class="btn btn-primary" data-i18n="hero.discover">Discover</a>
-                <a href="#contact" class="btn btn-outline" data-i18n="hero.join">Join Us</a>
+                <a href="#workshop" class="btn btn-primary" data-i18n="hero.workshop">Workshop 25.07 →</a>
+                <a href="#about" class="btn btn-outline" data-i18n="hero.discover">Discover</a>
             </div>
         </div>
         <div class="scroll-indicator">
             <span data-i18n="hero.scroll">Scroll</span>
             <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Workshop / Registration Section -->
+    <section class="section section-workshop" id="workshop">
+        <div class="workshop-bg"></div>
+        <div class="container">
+            <div class="workshop-grid">
+                <!-- Event info -->
+                <div class="workshop-info reveal">
+                    <span class="workshop-badge" data-i18n="workshop.anniversary">10 anos &bull; 2016&ndash;2026</span>
+                    <span class="section-tag workshop-tag" data-i18n="workshop.tag">Save the Date</span>
+                    <h2 class="workshop-title" data-i18n="workshop.title">Maracatu Workshop</h2>
+                    <p class="workshop-with" data-i18n="workshop.with">with Mestre Fabinho</p>
+                    <p class="workshop-intro" data-i18n="workshop.intro">A hands-on maracatu workshop led by Mestre Fabinho. Open to everyone &mdash; no experience needed. Limited spots, register now to secure your place.</p>
+
+                    <div class="workshop-details">
+                        <div class="workshop-detail">
+                            <div class="workshop-detail-icon">
+                                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                            </div>
+                            <div>
+                                <span class="workshop-detail-label" data-i18n="workshop.date_label">Date</span>
+                                <span class="workshop-detail-value" data-i18n="workshop.date_value">25.07</span>
+                            </div>
+                        </div>
+                        <div class="workshop-detail">
+                            <div class="workshop-detail-icon">
+                                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            </div>
+                            <div>
+                                <span class="workshop-detail-label" data-i18n="workshop.location_label">Location</span>
+                                <span class="workshop-detail-value" data-i18n="workshop.location_value">Brussels</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Registration form -->
+                <div class="workshop-form-card reveal">
+                    <h3 class="workshop-form-title" data-i18n="workshop.form_heading">Register</h3>
+                    <p class="workshop-form-sub" data-i18n="workshop.form_sub">Fill in your details and we'll confirm your spot.</p>
+
+                    <form id="workshopForm" class="workshop-form" novalidate>
+                        <div class="form-field">
+                            <label for="wsName" data-i18n="workshop.form_name">Full name</label>
+                            <input type="text" id="wsName" name="name" autocomplete="name" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="wsEmail" data-i18n="workshop.form_email">Email</label>
+                            <input type="email" id="wsEmail" name="email" autocomplete="email" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-field">
+                                <label for="wsLocation" data-i18n="workshop.form_country">Country / City</label>
+                                <input type="text" id="wsLocation" name="location" autocomplete="country-name" required>
+                            </div>
+                            <div class="form-field">
+                                <label for="wsPhone" data-i18n="workshop.form_phone">Phone / WhatsApp</label>
+                                <input type="tel" id="wsPhone" name="phone" autocomplete="tel">
+                            </div>
+                        </div>
+                        <div class="form-field">
+                            <label for="wsLevel" data-i18n="workshop.form_level">Experience level</label>
+                            <select id="wsLevel" name="level" required>
+                                <option value="" data-i18n="workshop.level_placeholder">Select...</option>
+                                <option value="beginner" data-i18n="workshop.level_beginner">Beginner</option>
+                                <option value="intermediate" data-i18n="workshop.level_intermediate">Intermediate</option>
+                                <option value="advanced" data-i18n="workshop.level_advanced">Advanced</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary workshop-submit" data-i18n="workshop.submit">Register</button>
+                        <p class="workshop-form-msg" id="workshopMsg" role="status" aria-live="polite"></p>
+                    </form>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -349,6 +425,6 @@
         </div>
     </footer>
 
-    <script src="script.js?v=2"></script>
+    <script src="script.js?v=3"></script>
 </body>
 </html>

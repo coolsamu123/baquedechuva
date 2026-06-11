@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initParallax();
     initRainEffect();
     initInstrumentCards();
+    initWorkshopForm();
     loadContent();
 });
 
@@ -451,7 +452,35 @@ const FALLBACK_TRANSLATIONS = {
         'contact.rehearsals_sub': 'All levels welcome \u2014 no experience needed',
         'contact.community': 'Community',
         'contact.community_sub': 'A vibrant multicultural collective',
-        'footer.tagline': 'Brussels Maracatu \u2022 Founded 2016 \u2022 ASBL KWA!'
+        'footer.tagline': 'Brussels Maracatu \u2022 Founded 2016 \u2022 ASBL KWA!',
+        'nav.workshop': 'Workshop',
+        'hero.workshop': 'Workshop 25.07 \u2192',
+        'workshop.anniversary': '10 Years \u2022 2016\u20132026',
+        'workshop.tag': 'Save the Date',
+        'workshop.title': 'Maracatu Workshop',
+        'workshop.with': 'with Mestre Fabinho',
+        'workshop.intro': 'A hands-on maracatu workshop led by Mestre Fabinho. Open to everyone \u2014 no experience needed. Limited spots, register now to secure your place.',
+        'workshop.date_label': 'Date',
+        'workshop.date_value': '25.07',
+        'workshop.location_label': 'Location',
+        'workshop.location_value': 'Brussels',
+        'workshop.form_heading': 'Register',
+        'workshop.form_sub': 'Fill in your details and we\u2019ll confirm your spot.',
+        'workshop.form_name': 'Full name',
+        'workshop.form_email': 'Email',
+        'workshop.form_country': 'Country / City',
+        'workshop.form_phone': 'Phone / WhatsApp',
+        'workshop.form_level': 'Experience level',
+        'workshop.level_placeholder': 'Select...',
+        'workshop.level_beginner': 'Beginner',
+        'workshop.level_intermediate': 'Intermediate',
+        'workshop.level_advanced': 'Advanced',
+        'workshop.submit': 'Register',
+        'workshop.sending': 'Sending...',
+        'workshop.success_title': 'You\u2019re registered!',
+        'workshop.success_text': 'Thank you! We\u2019ve received your registration and will be in touch soon.',
+        'workshop.error': 'Something went wrong. Please try again or write to us on Instagram.',
+        'workshop.not_configured': 'Registration opens soon \u2014 please check back shortly.'
     },
     fr: {
         'nav.about': '\u00C0 propos',
@@ -512,7 +541,35 @@ const FALLBACK_TRANSLATIONS = {
         'contact.rehearsals_sub': 'Tous niveaux bienvenus \u2014 aucune exp\u00e9rience requise',
         'contact.community': 'Communaut\u00e9',
         'contact.community_sub': 'Un collectif multiculturel dynamique',
-        'footer.tagline': 'Maracatu de Bruxelles \u2022 Fond\u00e9 en 2016 \u2022 ASBL KWA!'
+        'footer.tagline': 'Maracatu de Bruxelles \u2022 Fond\u00e9 en 2016 \u2022 ASBL KWA!',
+        'nav.workshop': 'Atelier',
+        'hero.workshop': 'Atelier 25.07 \u2192',
+        'workshop.anniversary': '10 ans \u2022 2016\u20132026',
+        'workshop.tag': 'R\u00e9servez la date',
+        'workshop.title': 'Atelier de Maracatu',
+        'workshop.with': 'avec Mestre Fabinho',
+        'workshop.intro': 'Un atelier de maracatu anim\u00e9 par Mestre Fabinho. Ouvert \u00e0 tous \u2014 aucune exp\u00e9rience requise. Places limit\u00e9es, inscrivez-vous d\u00e8s maintenant pour r\u00e9server la v\u00f4tre.',
+        'workshop.date_label': 'Date',
+        'workshop.date_value': '25.07',
+        'workshop.location_label': 'Lieu',
+        'workshop.location_value': 'Bruxelles',
+        'workshop.form_heading': 'Inscription',
+        'workshop.form_sub': 'Remplissez vos informations et nous confirmerons votre place.',
+        'workshop.form_name': 'Nom complet',
+        'workshop.form_email': 'E-mail',
+        'workshop.form_country': 'Pays / Ville',
+        'workshop.form_phone': 'T\u00e9l\u00e9phone / WhatsApp',
+        'workshop.form_level': 'Niveau d\u2019exp\u00e9rience',
+        'workshop.level_placeholder': 'Choisir...',
+        'workshop.level_beginner': 'D\u00e9butant',
+        'workshop.level_intermediate': 'Interm\u00e9diaire',
+        'workshop.level_advanced': 'Avanc\u00e9',
+        'workshop.submit': 'S\u2019inscrire',
+        'workshop.sending': 'Envoi...',
+        'workshop.success_title': 'Inscription re\u00e7ue !',
+        'workshop.success_text': 'Merci ! Nous avons bien re\u00e7u votre inscription et vous contacterons bient\u00f4t.',
+        'workshop.error': 'Une erreur s\u2019est produite. R\u00e9essayez ou \u00e9crivez-nous sur Instagram.',
+        'workshop.not_configured': 'Les inscriptions ouvrent bient\u00f4t \u2014 revenez tr\u00e8s vite.'
     },
     pt: {
         'nav.about': 'Sobre',
@@ -573,7 +630,35 @@ const FALLBACK_TRANSLATIONS = {
         'contact.rehearsals_sub': 'Todos os n\u00edveis s\u00e3o bem-vindos \u2014 nenhuma experi\u00eancia necess\u00e1ria',
         'contact.community': 'Comunidade',
         'contact.community_sub': 'Um coletivo multicultural vibrante',
-        'footer.tagline': 'Maracatu de Bruxelas \u2022 Fundado em 2016 \u2022 ASBL KWA!'
+        'footer.tagline': 'Maracatu de Bruxelas \u2022 Fundado em 2016 \u2022 ASBL KWA!',
+        'nav.workshop': 'Workshop',
+        'hero.workshop': 'Workshop 25.07 \u2192',
+        'workshop.anniversary': '10 anos \u2022 2016\u20132026',
+        'workshop.tag': 'Reserve a data',
+        'workshop.title': 'Workshop de Maracatu',
+        'workshop.with': 'com Mestre Fabinho',
+        'workshop.intro': 'Um workshop de maracatu com Mestre Fabinho. Aberto a todos \u2014 nenhuma experi\u00eancia necess\u00e1ria. Vagas limitadas, inscreva-se j\u00e1 para garantir seu lugar.',
+        'workshop.date_label': 'Data',
+        'workshop.date_value': '25.07',
+        'workshop.location_label': 'Local',
+        'workshop.location_value': 'Bruxelas',
+        'workshop.form_heading': 'Inscri\u00e7\u00e3o',
+        'workshop.form_sub': 'Preencha seus dados e confirmaremos sua vaga.',
+        'workshop.form_name': 'Nome completo',
+        'workshop.form_email': 'E-mail',
+        'workshop.form_country': 'Pa\u00eds / Cidade',
+        'workshop.form_phone': 'Telefone / WhatsApp',
+        'workshop.form_level': 'N\u00edvel de experi\u00eancia',
+        'workshop.level_placeholder': 'Selecione...',
+        'workshop.level_beginner': 'Iniciante',
+        'workshop.level_intermediate': 'Intermedi\u00e1rio',
+        'workshop.level_advanced': 'Avan\u00e7ado',
+        'workshop.submit': 'Inscrever-se',
+        'workshop.sending': 'Enviando...',
+        'workshop.success_title': 'Inscri\u00e7\u00e3o recebida!',
+        'workshop.success_text': 'Obrigado! Recebemos sua inscri\u00e7\u00e3o e entraremos em contato em breve.',
+        'workshop.error': 'Algo deu errado. Tente novamente ou fale com a gente no Instagram.',
+        'workshop.not_configured': 'As inscri\u00e7\u00f5es abrem em breve \u2014 volte logo.'
     }
 };
 
@@ -603,6 +688,9 @@ function setLanguage(lang, translations) {
     const t = translations[lang];
     if (!t) return;
 
+    activeTranslations = translations;
+    activeLang = lang;
+
     document.documentElement.lang = lang === 'pt' ? 'pt-BR' : lang;
 
     document.querySelectorAll('[data-i18n]').forEach(el => {
@@ -611,4 +699,102 @@ function setLanguage(lang, translations) {
             el.innerHTML = t[key];
         }
     });
+
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+        const key = el.dataset.i18nPlaceholder;
+        if (t[key]) {
+            el.setAttribute('placeholder', t[key]);
+        }
+    });
+}
+
+/* ========================================
+   Workshop Registration Form
+   ======================================== */
+let activeTranslations = FALLBACK_TRANSLATIONS;
+let activeLang = localStorage.getItem('bdc-lang') || 'en';
+
+function i18n(key) {
+    const t = (activeTranslations && activeTranslations[activeLang]) || FALLBACK_TRANSLATIONS[activeLang] || FALLBACK_TRANSLATIONS.en;
+    return (t && t[key]) || (FALLBACK_TRANSLATIONS.en && FALLBACK_TRANSLATIONS.en[key]) || key;
+}
+
+function initWorkshopForm() {
+    const form = document.getElementById('workshopForm');
+    if (!form) return;
+
+    const msg = document.getElementById('workshopMsg');
+    const submitBtn = form.querySelector('.workshop-submit');
+    const defaultBtnText = submitBtn ? submitBtn.textContent : '';
+
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        msg.className = 'workshop-form-msg';
+        msg.textContent = '';
+
+        if (!form.checkValidity()) {
+            form.reportValidity();
+            return;
+        }
+
+        const cfg = (siteContent && siteContent.workshop) || null;
+        const configured = cfg && cfg.googleFormId &&
+            cfg.googleFormId.indexOf('COLE') === -1 &&
+            cfg.entries;
+
+        if (!configured) {
+            msg.classList.add('error');
+            msg.textContent = i18n('workshop.not_configured');
+            return;
+        }
+
+        const values = {
+            name: document.getElementById('wsName').value.trim(),
+            email: document.getElementById('wsEmail').value.trim(),
+            location: document.getElementById('wsLocation').value.trim(),
+            phone: document.getElementById('wsPhone').value.trim(),
+            level: document.getElementById('wsLevel').value
+        };
+
+        const params = new URLSearchParams();
+        Object.keys(cfg.entries).forEach(field => {
+            const entryId = cfg.entries[field];
+            if (entryId && values[field] !== undefined) {
+                params.append(entryId, values[field]);
+            }
+        });
+
+        submitBtn.disabled = true;
+        submitBtn.textContent = i18n('workshop.sending');
+
+        const url = 'https://docs.google.com/forms/d/e/' + cfg.googleFormId + '/formResponse';
+
+        fetch(url, {
+            method: 'POST',
+            mode: 'no-cors',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: params.toString()
+        })
+            .then(() => showWorkshopSuccess())
+            .catch(() => {
+                submitBtn.disabled = false;
+                submitBtn.textContent = defaultBtnText;
+                msg.classList.add('error');
+                msg.textContent = i18n('workshop.error');
+            });
+    });
+}
+
+function showWorkshopSuccess() {
+    const card = document.querySelector('.workshop-form-card');
+    if (!card) return;
+    card.innerHTML =
+        '<div class="workshop-success">' +
+        '<div class="workshop-success-icon">' +
+        '<svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>' +
+        '</div>' +
+        '<h3>' + i18n('workshop.success_title') + '</h3>' +
+        '<p>' + i18n('workshop.success_text') + '</p>' +
+        '</div>';
 }
