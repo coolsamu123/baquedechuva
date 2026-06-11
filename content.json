@@ -41,7 +41,17 @@
 
   "estrela_badge": "Est. 1906",
 
-  "_WORKSHOP_README": "O formulário de inscrição do workshop é um Google Form embutido (iframe) no index.html, dentro da seção 'workshop'. Para trocar o formulário, basta atualizar a URL do iframe (procure por 'docs.google.com/forms' no index.html).",
+  "_WORKSHOP_README": "Formulário de inscrição customizado que envia para o Google Forms (as respostas caem na planilha). 'googleFormId' é o ID do formulário e 'entries' liga cada campo do site ao código (entry.123...) da pergunta no Google Form. Veja WORKSHOP-SETUP.md.",
+  "workshop": {
+    "googleFormId": "1FAIpQLSdR1ydHxDlbhpifnrRzgmqATQCUY4sin5w1-WABJKZdnNt92g",
+    "entries": {
+      "name": "entry.1465756874",
+      "email": "entry.2132824842",
+      "location": "entry.592779457",
+      "phone": "entry.1388876100",
+      "level": "entry.1704381539"
+    }
+  },
 
   "translations": {
     "en": {
