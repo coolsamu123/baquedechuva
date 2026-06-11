@@ -40,17 +40,7 @@
 
   "estrela_badge": "Est. 1906",
 
-  "_WORKSHOP_README": "Inscrições do workshop. Siga o passo a passo em WORKSHOP-SETUP.md: crie um Google Form, cole o ID do formulário em 'googleFormId' e os IDs de cada campo (entry.123...) em 'entries'. Enquanto 'googleFormId' tiver 'COLE_AQUI', o formulário mostra um aviso e não envia.",
-  "workshop": {
-    "googleFormId": "COLE_AQUI_O_ID_DO_FORMULARIO",
-    "entries": {
-      "name": "entry.0000000000",
-      "email": "entry.0000000000",
-      "location": "entry.0000000000",
-      "phone": "entry.0000000000",
-      "level": "entry.0000000000"
-    }
-  },
+  "_WORKSHOP_README": "O formulário de inscrição do workshop é um Google Form embutido (iframe) no index.html, dentro da seção 'workshop'. Para trocar o formulário, basta atualizar a URL do iframe (procure por 'docs.google.com/forms' no index.html).",
 
   "translations": {
     "en": {
