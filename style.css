@@ -1514,6 +1514,305 @@ ul {
 }
 
 /* ========================================
+   Workshop / Registration Section
+   ======================================== */
+.section-workshop {
+    position: relative;
+    overflow: hidden;
+    background: var(--color-primary-dark);
+    color: var(--color-white);
+}
+
+.workshop-bg {
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(circle at 15% 20%, rgba(42, 90, 171, 0.55), transparent 45%),
+        radial-gradient(circle at 85% 80%, rgba(240, 192, 64, 0.18), transparent 45%),
+        linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+    z-index: 0;
+}
+
+.section-workshop .container {
+    position: relative;
+    z-index: 1;
+}
+
+.workshop-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+/* Event info */
+.workshop-badge {
+    display: inline-block;
+    padding: 0.4rem 1.1rem;
+    margin-bottom: 1.25rem;
+    font-size: 0.8125rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-primary-dark);
+    background: var(--color-accent);
+    border-radius: var(--radius-full);
+    box-shadow: var(--shadow-gold);
+}
+
+.workshop-tag {
+    display: block;
+    width: fit-content;
+    background: rgba(255, 255, 255, 0.12);
+    color: var(--color-accent-light);
+}
+
+.workshop-title {
+    font-size: clamp(2.25rem, 5.5vw, 3.5rem);
+    font-weight: 900;
+    line-height: 1.05;
+    text-transform: uppercase;
+    letter-spacing: -0.01em;
+    margin-bottom: 0.5rem;
+}
+
+.workshop-with {
+    font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+    font-weight: 600;
+    color: var(--color-accent);
+    margin-bottom: 1.5rem;
+}
+
+.workshop-intro {
+    font-size: 1.0625rem;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.85);
+    max-width: 30rem;
+    margin-bottom: 2rem;
+}
+
+.workshop-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem 2.5rem;
+}
+
+.workshop-detail {
+    display: flex;
+    align-items: center;
+    gap: 0.875rem;
+}
+
+.workshop-detail-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    color: var(--color-accent);
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(240, 192, 64, 0.4);
+    border-radius: var(--radius-md);
+}
+
+.workshop-detail-label {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.workshop-detail-value {
+    display: block;
+    font-size: 1.375rem;
+    font-weight: 800;
+    color: var(--color-white);
+}
+
+/* Form card */
+.workshop-form-card {
+    background: var(--color-white);
+    color: var(--color-dark);
+    border-radius: var(--radius-xl);
+    padding: clamp(1.75rem, 4vw, 2.75rem);
+    box-shadow: var(--shadow-xl);
+}
+
+.workshop-form-card--embed {
+    padding: clamp(0.75rem, 2vw, 1rem);
+}
+
+.workshop-iframe {
+    display: block;
+    width: 100%;
+    height: 1050px;
+    max-height: 80vh;
+    border: 0;
+    border-radius: var(--radius-md);
+    background: var(--color-white);
+}
+
+.workshop-form-title {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: var(--color-primary);
+    margin-bottom: 0.375rem;
+}
+
+.workshop-form-sub {
+    font-size: 0.9375rem;
+    color: var(--color-gray);
+    margin-bottom: 1.75rem;
+}
+
+.workshop-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.1rem;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.form-field label {
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    letter-spacing: 0.01em;
+}
+
+.form-field input,
+.form-field select {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    font-family: var(--font-main);
+    font-size: 0.9375rem;
+    color: var(--color-dark);
+    background: var(--color-light);
+    border: 2px solid transparent;
+    border-radius: var(--radius-md);
+    transition: border-color var(--transition-fast), background var(--transition-fast);
+    appearance: none;
+}
+
+.form-field select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%231a3a6b' stroke-width='3'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    padding-right: 2.5rem;
+    cursor: pointer;
+}
+
+.form-field input:focus,
+.form-field select:focus {
+    outline: none;
+    background: var(--color-white);
+    border-color: var(--color-primary-light);
+}
+
+.form-field input:invalid:not(:placeholder-shown) {
+    border-color: #e57373;
+}
+
+.workshop-submit {
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+.workshop-submit:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.workshop-form-msg {
+    margin: 0;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-align: center;
+    min-height: 1.2em;
+}
+
+.workshop-form-msg.success { color: #2e7d32; }
+.workshop-form-msg.error { color: #c62828; }
+
+/* Success state */
+.workshop-success {
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+.workshop-success-icon {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-white);
+    background: #2e7d32;
+    border-radius: var(--radius-full);
+}
+
+.workshop-success h3 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--color-primary);
+    margin-bottom: 0.5rem;
+}
+
+.workshop-success p {
+    color: var(--color-gray);
+    font-size: 0.9375rem;
+}
+
+@media (max-width: 1024px) {
+    .workshop-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+    .workshop-info {
+        text-align: center;
+    }
+    .workshop-tag {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .workshop-intro {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .workshop-details {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+    .workshop-details {
+        flex-direction: column;
+        align-items: center;
+    }
+    .workshop-detail {
+        width: 100%;
+        max-width: 16rem;
+    }
+}
+
+/* ========================================
    Print Styles
    ======================================== */
 @media print {
